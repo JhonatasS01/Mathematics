@@ -7,9 +7,9 @@ erros = acertos = 0
 tabuada = int(input("Qual tabuada deseja?: "))
 
 #criando a tabuada do 1 ao 10
-aleatorio = sample(range(1, 11), 1)
 for c in range(1, 10+1):
     while True:
+        aleatorio = sample(range(1, 11), 1)
         print(aleatorio[0], f"x {tabuada} = ", end='')
         resposta = int(input(""))
         #calculando e validando a resposta
