@@ -1,6 +1,6 @@
-#Multiplication Table Game
+#Multiplication Game
 #Created by Jhonatas Góis
-#Build version: 1.1
+#Build version: 1.2
 from random import sample
 
 def titulo(txt):
@@ -9,7 +9,7 @@ def titulo(txt):
     print(f"   {txt}   ")
     print("-" * tamanho + "\n\033[m", end="")
 
-titulo("Multiplication Table")
+titulo("Multiplication Game")
 
 while True:
     try:
@@ -45,7 +45,7 @@ while True:
         #
         continuar = input("Deseja treinar outra tabuada? [S/N]: ").strip().upper()
         if continuar != 'S':
-            print("\n\033[1;32mObrigado por jogar! Até a próxima.\033[m")
+            print("\n\033[1;32mObrigado por jogar! Até a próxima.\033[m\n")
             break
 
     #log de erros e paradas inesperadas
